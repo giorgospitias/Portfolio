@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>George Pitias - I'm Front-end developer</title>
     <meta name="description" content="This is my personal portfolio " />
-    <link rel="shortcut icon" href="" type="image/svg+xml" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.svg"
+      type="image/svg+xml"
+    />
     <link rel="stylesheet" href="./style.css" />
     <!-- 
     - google font link
@@ -36,7 +40,7 @@
           />
         </a>
 
-        <nav class="navbar active" data-navbar>
+        <nav class="navbar" data-navbar>
           <div class="navbar-top">
             <a href="#" class="logo">
               <img
@@ -104,10 +108,57 @@
           <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
         </button>
 
-        <div class="overlay active" data-nav-toggler data-overlay></div>
+        <div class="overlay" data-nav-toggler data-overlay></div>
       </div>
     </header>
 
+    <main>
+      <article>
+        <!-- 
+          - #HERO
+        -->
+
+        <section class="section hero" aria-label="home">
+          <div class="container">
+            <figure class="hero-banner">
+              <img
+                src="./assets/images/profilepic.png"
+                width="560"
+                height="540"
+                alt="George"
+                class="w-100"
+                data-reveal="top"
+              />
+            </figure>
+
+            <div class="hero-content">
+              <h1
+                class="h1 hero-title"
+                data-reveal="top"
+                data-reveal-delay="0.5s"
+              >
+                I'm a front end Developer.
+              </h1>
+
+              <p
+                class="section-text"
+                data-reveal="top"
+                data-reveal-delay="0.75s"
+              >
+                Hello! I'm George, a Front end developer based in Thessaloniki.
+                I’m very passionate about the work that I do.
+              </p>
+
+              <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
+                <a href="#" class="btn btn-primary">See My Works</a>
+
+                <a href="#" class="btn btn-secondary">Contact Me</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
     <script src="./script.js"></script>
     <!-- 
     - ionicon link
